@@ -1,25 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Div from './components/Div';
 
-function App() {
+const App = () =>{
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className="">
+      <h1 className="App">Welcome to React</h1>
+      <h1 className="student">Name of Students</h1>
+      <div className="container">
+        <div class="row">
+          <Div name="Sara" age="30"/>
+          <Div name="Maria" age="35"/>
+          <Div name="Smith" age="40"/>
+        </div>
+      </div>
+      </div>
+  
   );
 }
 
